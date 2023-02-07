@@ -249,7 +249,9 @@ export class App extends Component {
                   The Inuit homeland is known as Inuit Nunangat, meaning the
                   land, ice, and water in the Arctic regions that we call
                   Alaska, Yukon, Northwest Territory, Nunavut including Baffin
-                  Island, and Greenland.
+                  Island, and Greenland. After you have read the story you can
+                  think about what you have learned about living in the Arctic
+                  regions.
                 </div>
               </div>
             </div>
@@ -280,9 +282,9 @@ export class App extends Component {
                     </span>
                   </p>
                   <div id="s1" className="speech2">
-                    Notice that the Inuit live in igloos in the winter. An igloo
-                    is a dome-shaped dwelling made from ice. Why did they make
-                    their homes from ice? Do you think it is warm inside?
+                    Notice that the Inuit live in igloos in winter. An igloo is
+                    a dome-shaped dwelling made from ice because there are no
+                    trees to make house from.
                   </div>
                 </div>
               </div>
@@ -331,51 +333,26 @@ export class App extends Component {
                   </div>
                   <p>
                     One cold winter day, the woman was walking by the sea when
-                    she <span className="highlight">spotted</span> a tiny white
-                    polar bear sitting all alone on the thick ice. His mother
-                    was nowhere in sight. "Someone must have killed her," she
-                    said softly, and she walked onto the ice, picked up the cub
-                    and looked into his eyes. "You will be my son," she said.
-                    She called him Kunik.
+                    she spotted a tiny white polar bear sitting all alone on the
+                    thick ice. His mother was nowhere in sight. "Someone must
+                    have killed her," she said softly, and she walked onto the
+                    ice, picked up the cub and looked into his eyes. "You will
+                    be my son," she said. She called him Kunik.
                     <span
                       className="doneButton"
                       id="done3"
                       onClick={() => {
                         this.toggle("s3");
                         this.hide("done3");
+                        this.showNext();
                       }}
                     >
                       Done
                     </span>
                   </p>
-                  <div id="s3" className="multiple">
-                    Look again at the story. What does the word spotted mean in
-                    the story?
-                    <div
-                      className="choice"
-                      id="3a"
-                      onClick={() => this.selectOption("3a", 3, 3, "3b")}
-                    >
-                      (a) The bear was white with dark spots on his fur.
-                    </div>
-                    <div
-                      className="choice"
-                      id="3b"
-                      onClick={() => {
-                        this.selectOption("3b", 3, 3, "3b");
-                        this.showNext();
-                      }}
-                    >
-                      (b) The old woman noticed the bear.{" "}
-                    </div>
-                    <div
-                      className="choice"
-                      id="3c"
-                      onClick={() => this.selectOption("3c", 3, 3, "3b")}
-                    >
-                      (c) The bear's bright white fur looked speckled in the
-                      sun.
-                    </div>
+                  <div id="s3" className="speech2">
+                    The woman spotted the bear sitting on the ice. This means
+                    she saw him sitting there.
                   </div>
                 </div>
               </div>
@@ -390,8 +367,8 @@ export class App extends Component {
                   </div>
                   <p>
                     The old woman took her cub back to her home. From that day
-                    on, she <span className="highlight">shared</span> all her
-                    food with Kunik, and a strong bond grew between the two.
+                    on, she shared all her food with Kunik, and a strong bond
+                    grew between the two.
                     <span
                       className="doneButton"
                       id="done4"
@@ -405,8 +382,7 @@ export class App extends Component {
                     </span>
                   </p>
                   <div id="s4" className="speech2">
-                    Do you share food with anyone in your family? A pet or a
-                    brother or sister?
+                    Sharing is an important way of making friends with someone.
                   </div>
                 </div>
               </div>
@@ -431,37 +407,15 @@ export class App extends Component {
                       onClick={() => {
                         this.toggle("s5");
                         this.hide("done5");
+                        this.showNext();
                       }}
                     >
                       Done
                     </span>
                   </p>
-                  <div id="s5" className="multiple">
-                    Why is the woman not lonely?
-                    <div
-                      className="choice"
-                      id="5a"
-                      onClick={() => this.selectOption("5a", 5, 3, "5b")}
-                    >
-                      (a) She plays with the bear in the snow.
-                    </div>
-                    <div
-                      className="choice"
-                      id="5b"
-                      onClick={() => {
-                        this.selectOption("5b", 5, 3, "5b");
-                        this.showNext();
-                      }}
-                    >
-                      (b) The bear and the children entertain her all day.
-                    </div>
-                    <div
-                      className="choice"
-                      id="5c"
-                      onClick={() => this.selectOption("5c", 5, 3, "5b")}
-                    >
-                      (c) Kunik is gentle with the children.
-                    </div>
+                  <div id="s5" className="speech2">
+                    Look at how happy the woman is now. When she watches the
+                    children playing with Kunik, she is no longer lonely.
                   </div>
                 </div>
               </div>
@@ -494,8 +448,8 @@ export class App extends Component {
                     </span>
                   </p>
                   <div id="s6" className="speech2">
-                    The old woman is proud of Kunik's fishing skills. What can
-                    you do that makes your family proud?
+                    The woman is so proud of Kunik. It makes her happy that he
+                    has learned to be the best fisher in the village.
                   </div>
                 </div>
               </div>
@@ -521,37 +475,15 @@ export class App extends Component {
                       onClick={() => {
                         this.toggle("s7");
                         this.hide("done7");
+                        this.showNext();
                       }}
                     >
                       Done
                     </span>
                   </p>
-                  <div id="s7" className="multiple">
-                    Select the word that is a synonym for envious:
-                    <div
-                      className="choice"
-                      id="7a"
-                      onClick={() => this.selectOption("7a", 7, 3, "7c")}
-                    >
-                      (a) mean
-                    </div>
-                    <div
-                      className="choice"
-                      id="7b"
-                      onClick={() => this.selectOption("7b", 7, 3, "7c")}
-                    >
-                      (b) frightened
-                    </div>
-                    <div
-                      className="choice"
-                      id="7c"
-                      onClick={() => {
-                        this.selectOption("7c", 7, 3, "7c");
-                        this.showNext();
-                      }}
-                    >
-                      (c) jealous
-                    </div>
+                  <div id="s7" className="speech2">
+                    The men are envious of the Kunik's fishing skills. They are
+                    jealous.
                   </div>
                 </div>
               </div>
@@ -584,8 +516,8 @@ export class App extends Component {
                     </span>
                   </p>
                   <div id="s8" className="speech2">
-                    The old woman is weeping because she is afraid for Kunik.
-                    What do you think will happen?
+                    The old woman wept when she heard the bad news. This means
+                    she was weeping because she was afraid for her bear.
                   </div>
                 </div>
               </div>
@@ -608,17 +540,15 @@ export class App extends Component {
                       onClick={() => {
                         this.toggleBlock("s9");
                         this.hide("done9");
+                        this.showNext();
                       }}
                     >
                       Done
                     </span>
                   </p>
                   <div id="s9" className="speech2">
-                    Kunik obeyed his mother's wishes. Fill in the blank in this
-                    sentence so that it says the same thing with new words:
-                    Kunik{" "}
-                    <input className="input-word" onInput={this.showNext} /> his
-                    mother's instructions.
+                    Kunik followed his mother's instructions even though it made
+                    him sad.
                   </div>
                 </div>
               </div>
@@ -645,51 +575,14 @@ export class App extends Component {
                       onClick={() => {
                         this.toggle("s10");
                         this.hide("done10");
+                        this.showNext();
                       }}
                     >
                       Done
                     </span>
                   </p>
-                  <div id="s10" className="multiple">
+                  <div id="s10" className="speech2">
                     Kunik brought food for his mother because he loves her.
-                    Which of these would you give to someone you love?
-                    <div
-                      className="flex-row"
-                      style={{ justifyContent: "space-evenly" }}
-                    >
-                      <img
-                        src={salmon}
-                        onClick={() => {
-                          this.playSuccess();
-                          this.showNext();
-                        }}
-                        className="choice-image"
-                      />
-                      <img
-                        src={chocolate}
-                        onClick={() => {
-                          this.playSuccess();
-                          this.showNext();
-                        }}
-                        className="choice-image"
-                      />
-                      <img
-                        src={steak}
-                        onClick={() => {
-                          this.playSuccess();
-                          this.showNext();
-                        }}
-                        className="choice-image"
-                      />
-                      <img
-                        src={flowers}
-                        onClick={() => {
-                          this.playSuccess();
-                          this.showNext();
-                        }}
-                        className="choice-image"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
